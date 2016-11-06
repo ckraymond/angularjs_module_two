@@ -73,3 +73,6 @@
   };
 
 })();
+
+// Minified Javascript test
+// !function(){"use strict";function t(t){var e=this;e.items_tobuy=t.getToBuy(),e.moveToBought=function(n){t.moveToBought(n),0==e.items_tobuy.length&&(e.toBuyEmpty=t.getBuyEmpty())}}function e(t){var e=this;e.items_bought=t.getBought(),e.boughtEmpty=function(){return 0==e.items_bought.length?!0:!1}}function n(){var t=this,e=[{name:"monkeys",quantity:10},{name:"hats",quantity:10},{name:"bells",quantity:20},{name:"beer",quantity:20},{name:"television",quantity:1},{name:"speakers",quantity:2},{name:"Banana Chips",quantity:1e3}],n=[];t.getToBuy=function(){return e},t.getBought=function(){return n},t.getBuyEmpty=function(){return 0==e.length?!0:!1},t.moveToBought=function(t){n.push(e[t]),e.splice(t,1)}}angular.module("ShoppingListCheckOff",[]).controller("ToBuyController",t).controller("AlreadyBoughtController",e).service("ShoppingListCheckOffService",n),t.$inject=["ShoppingListCheckOffService"],e.$inject=["ShoppingListCheckOffService"]}();
